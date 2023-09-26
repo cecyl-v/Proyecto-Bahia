@@ -1,0 +1,16 @@
+body {background-color: #00ff38;
+      background-image: url(../imagenes/cocinaart.jpg);
+      background-repeat: no-repeat;
+      background-position: 70% 30%;
+      background-attachment: fixed;
+
+
+
+.subtituloazul {color: blue;}
+.subtituloazul {text-decoration: underline;}
+.subtituloazul {font-size:36px;}
+
+.colorvioleta {color: #7529b9;}
+.colorvioleta {text-decoration: underline;}
+.colorvioleta {font-size: 48px;}
+.colorvioleta {text-align: center;}
