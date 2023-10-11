@@ -1,16 +1,25 @@
-body {background-image: url(../imagenes/fondowebcocina.jpg);
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+  font-family: 'Playfair Display', serif;
+  background-image: url(../imagenes/fondowebcocina.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 
-.subtituloazul {color: blue;}
-.subtituloazul {text-decoration: underline;}
-.subtituloazul {font-size:32px;}
 
-.colorvioleta {color: #7529b9;}
-.colorvioleta {text-decoration: underline;}
-.colorvioleta {font-size: 48px;}
-.colorvioleta {text-align: center;}
+.subtituloazul {color: blue;
+                font-size:32px;
+                text-decoration: underline;
+                }
+
+.colorvioleta {color: #7529b9;
+               text-decoration: underline;
+               font-size: 48px;
+               text-align: center;
+               display: block;
+               font-weight: bold;
+               }
 
 .azul {color:blue;}
 
@@ -26,9 +35,14 @@ body {background-image: url(../imagenes/fondowebcocina.jpg);
 
 
 .header{
-flex-direction: row;
-justify-content: space-evenly;
+flex-wrap: wrap;
+justify-content: space-around;
 align-items: center;
+flex-wrap: wrap;
+}
+
+.redes {
+  text-align: right;
 }
 
 
@@ -41,20 +55,12 @@ align-items: center;
 
 .principal {
 display: flex;
-flex-direction: column;
+flex-direction: row;
+justify-content: space-evenly;
 background-color:#BB8FCE;
 padding: 1rem;
-}
-
-
-.principal {
-            display: block;
-            font-size: 3rem;
+font-size: 3rem;
             text-align: center;
-            text-decoration:none;
-                      text-decoration-line: none;
-                      text-decoration-thickness: initial;
-                      text-decoration-color:initial;
             padding: 1rem;
                     padding-top: 1rem;
                     padding-right: 1rem;
@@ -62,16 +68,28 @@ padding: 1rem;
                     padding-left: 1rem;
            }
 
+
 .footer{
-  display: block;
+  display: flex;
   box-sizing: inherit;
   font-family: monospace;
   flex-wrap: wrap;
+
   flex-direction: row;
+  justify-content: space-evenly;
   background-color:#BB8FCE;
   width: 100%;
   font-size: 2rem;
   text-align: center;
+  padding: 1rem;
+          padding-top: 1rem;
+          padding-right: 1rem;
+          padding-bottom: 1rem;
+          padding-left: 1rem;
+       }
+
+ .mapa {
+         text-align: left;
        }
 
 .botontwitch{
@@ -91,14 +109,31 @@ padding: 1rem;
   transition: all 0.4s case-in-out;
   }
 
+.botonyoutube{
+  font-size: 28px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all 0.4s case-in-out;
+  }
+
+  .botontwitter{
+    font-size: 28px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: all 0.4s case-in-out;
+    }
+
 
 .descripcion{
 font-family: monospace;
 font-size:18px;
 font-style: italic;
-color: #7529b9;
+color: black;
 text-align: right;
-             }
+           }
+
 
 .botonwhatsapp {
   width: 45px;
