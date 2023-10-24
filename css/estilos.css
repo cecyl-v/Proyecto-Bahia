@@ -70,7 +70,7 @@ font-style: oblique;}
 
 
 .colorclaro {color:#4CA23E;
-font-size: 24px;
+font-size: 16px;
 font-style: oblique;}
 
 
@@ -225,7 +225,7 @@ height:100px;
     display: none;}
   }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 .contenedor {
   display: none;
 }
