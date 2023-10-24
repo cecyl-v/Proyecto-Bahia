@@ -1,40 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-body {font-family: 'Playfair Display', serif;
-background-image: url(../imagenes/fondowebcocina.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
+/* aca empieza el body */
 
+body {
+  font-family: 'Playfair Display', serif;
+  background-image: url(../imagenes/fondowebcocina.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
-.header{display: flex;
-flex-wrap: wrap;
-align-items: center;
-justify-content: space-around;
-width: 100%;}
-
-.videopasos {
-  width: 35vw;
-  height: 35vh;
+/*aca empieza el header*/
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+  
+  .colorvioleta {
+    color: #7529b9;
+    text-decoration: underline;
+    font-size: 48px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
   }
-
-
-.logo {width: 6.5vw;
-height: auto;}
+  
+  .logo {
+    width: 6.5vw;
+    height: auto;
+  }
+    
+  .redes {text-align: right;
+    width: auto;}
+    
+.videopasos {width: 35vw;
+  height: 35vh;}
 
 .subtituloazul {color: blue;
 font-size:32px;
-text-decoration: underline;}
-
-
-.colorvioleta {color: #7529b9;
 text-decoration: underline;
-font-size: 48px;
-align-items: center;
-text-align: center;
-display: block;
-font-weight: bold;
-width: 800px;}
+max-width: 500px;
+}
+
+
+/* caracteristicas */
+
+.Ingredientes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+justify-content: space-between;
+max-width: 800px;
+}
+
+.Ingredientes img {
+display: none;
+}
 
 
 .azul {color:blue;}
@@ -46,12 +70,11 @@ font-style: oblique;}
 
 
 .colorclaro {color:#4CA23E;
-font-size: 16px;
+font-size: 24px;
 font-style: oblique;}
 
 
-.redes {text-align: right;
-width: auto;}
+a{text-decoration: none;}
 
 
 .img {display: flex;
@@ -61,6 +84,7 @@ width: 15%;}
 
 .principal {display: flex;
 flex-direction: row;
+flex-wrap: wrap;
 justify-content: space-evenly;
 background-color:#BB8FCE;
 padding: 1rem;
@@ -73,7 +97,8 @@ padding-bottom: 1rem;
 padding-left: 1rem;}
 
 
-.button {min-width: 130px;
+.button {
+min-width: 130px;
 height: 40px;
 padding: 5px 10px;
 padding-top: 5px;
@@ -90,81 +115,133 @@ transition-behavior: normal;
 background: #DFB9CF;
 background-color: RGB 223, 185, 207;
 box-shadow: 0 5px #DE70B0;
-font-size: 18px;}
+font-size: 18px;
+}
 
 
 .principal button:hover {
 color: #4CA23E;
-background-color: #7529b9;}
+background-color: #7529b9;
+}
 
-
-.contenedor{display: flex;
-text-align: center;
-justify-content: center;
-border: 4px solid;
-border-style: dashed;
-color: #7529b9;
-width: 45vw;
-height: 45vh;
-margin: 50px;}
-
-
-.footer{display: flex;
-flex-wrap: wrap;
-justify-content: space-around;
-background-color:#BB8FCE;
-width: auto;
-text-align: center;
-align-items: center;
+.contenedor{
+  display: flex;
+  gap: 50px;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
 }
 
 
-.mapa{width:200px;
-height:100px;}
+.contenedor img {
+  border: 4px dashed #7529b9;
+  width: 40%;
+  max-width: 300px;
+  min-width: 250px;
+}
+
+/* aca empieza el footer*/
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color:#BB8FCE;
+  width: auto;
+  text-align: center;
+  align-items: center;
+}
 
 
-.botontwitch{font-size: 28px;
-width: 45px;
-height: 45px;
-border-radius: 50%;
-transition: all 0.4s case-in-out;}
+.mapa{
+  width:200px;
+height:100px;
+}
 
 
-.botoninstagram{font-size: 28px;
-width: 45px;
-height: 45px;
-border-radius: 50%;
-transition: all 0.4s case-in-out;}
+.botontwitch{
+  font-size: 28px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all 0.4s case-in-out;
+}
 
 
-.botonyoutube{font-size: 28px;
-width: 45px;
-height: 45px;
-border-radius: 50%;
-transition: all 0.4s case-in-out;}
+.botoninstagram{
+  font-size: 28px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all 0.4s case-in-out;
+}
 
 
-.botontwitter{font-size: 28px;
-width: 45px;
-height: 45px;
-border-radius: 50%;
-transition: all 0.4s case-in-out;}
+.botonyoutube{
+  font-size: 28px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all 0.4s case-in-out;
+}
 
 
-.descripcion{font-family: monospace;
-font-size:18px;
-font-style: italic;
-color: black;
-text-align: center;}
+.botontwitter{
+  font-size: 28px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all 0.4s case-in-out;
+}
 
 
-.botonwhatsapp {width: 45px;
-height: 45px;
-position: fixed;
-line-height: 45px;
-right: 45px;
-bottom: 45px;}
+.descripcion{
+  font-family: monospace;
+  font-size:18px;
+  font-style: italic;
+  color: black;
+  text-align: center;
+}
+
+
+.botonwhatsapp {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  line-height: 45px;
+  right: 45px;
+  bottom: 45px;
+}
+
 
 .botonwhatsapp:hover {
-color: #4CA23E;
-background-color: #7529b9;}
+  color: #4CA23E;
+  background-color: #7529b9;
+}
+
+/* esta media query es para tablets */
+@media (max-width:700px) {
+  .videopasos {
+    display: none;}
+  }
+
+@media (max-width: 400px) {
+.contenedor {
+  display: none;
+}
+
+.subtituloazul {
+  color: #7529b9;
+}
+
+.Ingredientes img {
+  display: block;
+}
+}
+
+  
+
+
+
+
+
