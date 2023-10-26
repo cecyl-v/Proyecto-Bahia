@@ -69,10 +69,6 @@ font-size: 16px;
 font-style: oblique;}
 
 
-.colorclaro {color:#4CA23E;
-font-size: 16px;
-font-style: oblique;}
-
 
 a{text-decoration: none;}
 
@@ -86,15 +82,12 @@ width: 15%;}
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-evenly;
+align-items: center;
 background-color:#BB8FCE;
-padding: 1rem;
 font-size: 3rem;
 text-align: center;
-padding: 1rem;
-padding-top: 1rem;
-padding-right: 1rem;
-padding-bottom: 1rem;
-padding-left: 1rem;}
+padding-bottom: 1.5rem;
+}
 
 
 .button {
@@ -140,6 +133,20 @@ background-color: #7529b9;
   max-width: 300px;
   min-width: 250px;
 }
+
+.card {
+height: 100%;
+flex-direction: column;
+}
+
+.card-img-top {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 2/1;
+}
+
+
+
 
 /* aca empieza el footer*/
 .footer{
