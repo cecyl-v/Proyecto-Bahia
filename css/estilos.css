@@ -11,38 +11,43 @@ body {
 }
 
 /*aca empieza el header*/
-.header{
+.header {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   width: 100%;
 }
-  
-  .colorvioleta {
-    color: #7529b9;
-    text-decoration: underline;
-    font-size: 48px;
-    align-items: center;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .logo {
-    width: 6.5vw;
-    height: auto;
-  }
-    
-  .redes {text-align: right;
-    width: auto;}
-    
-.videopasos {width: 35vw;
-  height: 35vh;}
 
-.subtituloazul {color: blue;
-font-size:32px;
-text-decoration: underline;
-max-width: 500px;
+.colorvioleta {
+  color: #7529b9;
+  text-decoration: underline;
+  font-size: 48px;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.logo {
+  width: 6.5vw;
+  height: auto;
+}
+
+.redes {
+  text-align: right;
+  width: auto;
+}
+
+.videopasos {
+  width: 35vw;
+  height: 35vh;
+}
+
+.subtituloazul {
+  color: blue;
+  font-size: 32px;
+  text-decoration: underline;
+  max-width: 500px;
 }
 
 
@@ -52,72 +57,79 @@ max-width: 500px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-justify-content: space-between;
-max-width: 800px;
+  justify-content: space-between;
+  max-width: 800px;
 }
 
 .Ingredientes img {
-display: none;
+  display: none;
 }
 
 
-.azul {color:blue;}
+.azul {
+  color: blue;
+}
+
+.colorverde {
+  color: #4CA23E;
+  font-size: 16px;
+  font-style: oblique;
+}
 
 
-.colorverde {color:#4CA23E;
-font-size: 16px;
-font-style: oblique;}
+a {
+  text-decoration: none;
+}
 
 
-
-a{text-decoration: none;}
-
-
-.img {display: flex;
-flex-direction: row;
-width: 15%;}
+.img {
+  display: flex;
+  flex-direction: row;
+  width: 15%;
+}
 
 
-.principal {display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-evenly;
-align-items: center;
-background-color:#BB8FCE;
-font-size: 3rem;
-text-align: center;
-padding-bottom: 1.5rem;
+.principal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #BB8FCE;
+  font-size: 3rem;
+  text-align: center;
+  padding-bottom: 1.5rem;
 }
 
 
 .button {
-min-width: 130px;
-height: 40px;
-padding: 5px 10px;
-padding-top: 5px;
-padding-right: 10px;
-padding-bottom: 5px;
-padding-left: 10px;
-font-weight: bold;
-cursor: pointer;
-transition-duration: 0.3s;
-transition-delay: 0s;
-transition-property: all;
-transition-timing-function: ease;
-transition-behavior: normal;
-background: #DFB9CF;
-background-color: RGB 223, 185, 207;
-box-shadow: 0 5px #DE70B0;
-font-size: 18px;
+  min-width: 130px;
+  height: 40px;
+  padding: 5px 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-behavior: normal;
+  background: #DFB9CF;
+  background-color: RGB 223, 185, 207;
+  box-shadow: 0 5px #DE70B0;
+  font-size: 18px;
 }
 
 
 .principal button:hover {
-color: #4CA23E;
-background-color: #7529b9;
+  color: #4CA23E;
+  background-color: #7529b9;
 }
 
-.contenedor{
+.contenedor {
   display: flex;
   gap: 50px;
   text-align: center;
@@ -135,8 +147,8 @@ background-color: #7529b9;
 }
 
 .card {
-height: 100%;
-flex-direction: column;
+  height: 100%;
+  flex-direction: column;
 }
 
 .card-img-top {
@@ -145,28 +157,45 @@ flex-direction: column;
   aspect-ratio: 2/1;
 }
 
+.light {
+  display: none;
+}
 
+.modo-oscuro {
+  background-image: none;
+  background-color: black;
+  color: white;
+}
 
-
+.modo-oscuro .dark {
+  background-color: white;
+  color: black;
+}
 /* aca empieza el footer*/
-.footer{
+.footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color:#BB8FCE;
+  background-color: #BB8FCE;
   width: auto;
   text-align: center;
   align-items: center;
 }
 
+.datos-desarrolladora {
+  background: initial;
+  color: initial;
+  border: initial;
+  border-radius: 50%;
+}
 
-.mapa{
-  width:200px;
-height:100px;
+.mapa {
+  width: 200px;
+  height: 100px;
 }
 
 
-.botontwitch{
+.botontwitch {
   font-size: 28px;
   width: 45px;
   height: 45px;
@@ -175,7 +204,7 @@ height:100px;
 }
 
 
-.botoninstagram{
+.botoninstagram {
   font-size: 28px;
   width: 45px;
   height: 45px;
@@ -184,7 +213,7 @@ height:100px;
 }
 
 
-.botonyoutube{
+.botonyoutube {
   font-size: 28px;
   width: 45px;
   height: 45px;
@@ -193,7 +222,7 @@ height:100px;
 }
 
 
-.botontwitter{
+.botontwitter {
   font-size: 28px;
   width: 45px;
   height: 45px;
@@ -202,9 +231,9 @@ height:100px;
 }
 
 
-.descripcion{
+.descripcion {
   font-family: monospace;
-  font-size:18px;
+  font-size: 18px;
   font-style: italic;
   color: black;
   text-align: center;
@@ -229,26 +258,20 @@ height:100px;
 /* esta media query es para tablets */
 @media (max-width:700px) {
   .videopasos {
-    display: none;}
+    display: none;
   }
+}
 
 @media (max-width: 450px) {
-.contenedor {
-  display: none;
+  .contenedor {
+    display: none;
+  }
+
+  .subtituloazul {
+    color: #7529b9;
+  }
+
+  .Ingredientes img {
+    display: block;
+  }
 }
-
-.subtituloazul {
-  color: #7529b9;
-}
-
-.Ingredientes img {
-  display: block;
-}
-}
-
-  
-
-
-
-
-
